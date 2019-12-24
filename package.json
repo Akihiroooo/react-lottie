@@ -1,10 +1,10 @@
 {
-  "name": "react-lottie",
-  "version": "1.2.3",
-  "description": "lottie animation view for React",
+  "name": "@Akihiroooo/react-lottie",
+  "version": "0.0.1",
+  "description": "lottie animation view for React. added support babel7",
   "repository": {
     "type": "git",
-    "url": "https://github.com/chenqingspring/react-lottie"
+    "url": "https://github.com/Akihiroooo/react-lottie"
   },
   "license": "MIT",
   "scripts": {
@@ -29,6 +29,7 @@
     "@babel/polyfill": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-react": "^7.7.4",
+    "@babel/register": "^7.4.0",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-links": "^5.2.8",
     "@storybook/addons": "^5.2.8",
@@ -50,7 +51,8 @@
     "react-addons-test-utils": "^15.6.2",
     "react-dom": "^15.6.2",
     "sinon": "^1.17.6",
-    "standard-version": "^4.4.0"
+    "standard-version": "^4.4.0",
+    "webpack": "^4.29.6"
   },
   "peerDependencies": {
     "react": "^0.14.7 || ^15.0.0 || ^16.0.0"
