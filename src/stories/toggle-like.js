@@ -3,7 +3,6 @@ import Lottie from '../index';
 import * as animationDataA from './TwitterHeart.json';
 
 export default class ToggleLike extends React.Component {
-
   constructor(props) {
     super(props);
 

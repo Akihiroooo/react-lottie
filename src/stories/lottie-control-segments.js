@@ -4,7 +4,6 @@ import * as animationDataA from './pinjump.json';
 import * as animationDataB from './TwitterHeart.json';
 
 export default class LottieControlSegment extends React.Component {
-
   constructor(props) {
     super(props);
 
