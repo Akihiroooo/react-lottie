@@ -17,10 +17,15 @@
     "test-watch": "npm run testonly -- --watch --watch-extensions js",
     "start": "start-storybook -p 9010",
     "publish-storybook": "bash .scripts/publish_storybook.sh",
-    "postpublish": "npm run publish-storybook"
+    "postpublish": "npm run publish-storybook",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "devDependencies": {
-    "@kadira/storybook": "^2.35.3",
+    "@storybook/addon-actions": "^5.2.8",
+    "@storybook/addon-links": "^5.2.8",
+    "@storybook/addons": "^5.2.8",
+    "@storybook/react": "^5.2.8",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-eslint": "^6.1.2",
