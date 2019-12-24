@@ -1,7 +1,10 @@
 import React from 'react';
 import Lottie from '../index';
-import * as animationDataA from './pinjump.json';
-import * as animationDataB from './TwitterHeart.json';
+
+// eslint-disable-next-line global-require
+const animationDataA = require('./pinjump.json');
+// eslint-disable-next-line global-require
+const animationDataB = require('./TwitterHeart.json');
 
 export default class LottieControl extends React.Component {
   constructor(props) {

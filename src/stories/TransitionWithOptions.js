@@ -1,7 +1,10 @@
 import React from 'react';
 import Lottie from '../index';
-import * as animationDataA from './TwitterHeart.json';
-import * as animationDataB from './beating-heart.json';
+
+// eslint-disable-next-line global-require
+const animationDataA = require('./TwitterHeart.json');
+// eslint-disable-next-line global-require
+const animationDataB = require('./beating-heart.json');
 
 /**
  * TransitionWithOptions: demonstrates how you can switch to a
