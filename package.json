@@ -2,6 +2,7 @@
   "name": "@Akihiroooo/react-lottie",
   "version": "0.0.1",
   "description": "lottie animation view for React. added support babel7",
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/Akihiroooo/react-lottie"
