@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import Enzyme from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import { expect } from 'chai';
 import sinon from 'sinon';
 import ReactLottie from '../index';
@@ -16,8 +17,14 @@ const defaultOptions = {
   },
 };
 
+// eslint-disable-next-line no-undef
+beforeEach('setup enzyme', () => {
+  Enzyme.configure({ adapter: new Adapter() });
+});
+
 describe('react-lottie', () => {
   describe('props', () => {
+    const { mount, shallow } = Enzyme;
     describe('isClickToPauseDisabled', () => {
       it('should prevent handleClickToPause from being called when true', () => {
         const component = mount(<ReactLottie options={defaultOptions} />);
@@ -71,6 +78,8 @@ describe('react-lottie', () => {
   });
 
   describe('when props change', () => {
+    const { mount } = Enzyme;
+
     it('should change the animation that is being played', () => {
       const component = mount(<ReactLottie options={defaultOptions} />);
 
@@ -88,6 +97,8 @@ describe('react-lottie', () => {
   });
 
   describe('component lifecycle', () => {
+    const { mount } = Enzyme;
+
     describe('componentDidMount', () => {
       it('should register events', () => {
         const registerEventsSpy = sinon.stub();
