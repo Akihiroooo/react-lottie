@@ -1,9 +1,8 @@
-# Lottie Animation View for React ([Angular](https://github.com/chenqingspring/ng-lottie), [Vue](https://github.com/chenqingspring/vue-lottie))
+# Lottie Animation View for React ([Angular](https://github.com/chenqingspring/ng-lottie), [Vue](https://github.com/chenqingspring/vue-lottie)) 
 
-[![npm version](https://badge.fury.io/js/react-lottie.svg)](http://badge.fury.io/js/react-lottie)
+Made [react-lottie](https://github.com/chenqingspring/react-lottie) compatible with babel7
 
 ## Demo
-https://chenqingspring.github.io/react-lottie
 
 ## Wapper of bodymovin.js
 
